@@ -20,6 +20,7 @@ namespace Kotin_Lab7.Views
                 Note newnote = new Note("Новый Студент", "0", "0", "0", "0", "0", "0", "0", false);
                 newnote.PropertyChanged += context.ContentCollectionChanged;
                 context.Notes.Add(newnote);
+                context.ChangeAverage();
             };
 
 

@@ -173,19 +173,6 @@ namespace Kotin_Lab7.Models
 
         }
 
-
-        public string Name { get; private set; }
-        public string Abbreviation { get; private set; }
-        public string Capital { get; private set; }
-
-        
-
-        public override string ToString()
-        {
-            return Name;
-        }
-
-
     }
 
     

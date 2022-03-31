@@ -18,13 +18,6 @@ namespace Kotin_Lab7.ViewModels
                 note.PropertyChanged += ContentCollectionChanged;
 
             ChangeAverage();
-
-            Create = ReactiveCommand.Create(() =>
-            {
-                Note newnote = new Note("", "0", "0", "0", "0", "0", "0", "0", false);
-                newnote.PropertyChanged += ContentCollectionChanged;
-                Notes.Add(newnote);
-            });
         }
 
         string control1;
@@ -242,8 +235,6 @@ namespace Kotin_Lab7.ViewModels
             set { this.RaiseAndSetIfChanged(ref color7, value); }
         }
 
-
-        public ReactiveCommand<Unit, Unit> Create { get; }
 
     }
 }
